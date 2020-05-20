@@ -13,8 +13,7 @@ consumes:
   - file: /packages/react-toolbar/toolbar.ts
     description: Shows Toolbar state interface
 ---
-
-The CMS object in Tina is a container for attaching and accessing Plugins and APIs. On its own, the CMS does very little; however, since it's the central integration point for everything that Tina does, it's extremely important!
+The CMS object in Tina is a container for attaching and accessing Plugins and APIs. On its own, the CMS does very little; however, since it's the central integration point for everything **and some other stuff here.** that Tina does, it's extremely important!
 
 ## Setting up the CMS Object
 
@@ -28,7 +27,7 @@ const cms = new TinaCMS()
 
 The `TinaCMS` constructor receives an object that can be used to configure CMS behavior. See [CMS Configuration](#cms-configuration) for details.
 
-### The &lt;TinaProvider&gt; Component
+### The <TinaProvider> Component
 
 The `<TinaProvider>` component should wrap your entire site. It provides the following:
 
@@ -115,21 +114,21 @@ interface TinaCMSConfig {
 }
 ```
 
----
+***
 
-| key                  | usage                                                                                                   |
-| -------------------- | ------------------------------------------------------------------------------------------------------- |
-| **plugins**          | Array of plugins to be added to the CMS object.                                                         |
-| **apis**             | Object containing APIs to be registered to the CMS                                                      |
-| **sidebar**          | Configures behavior of the sidebar                                                                      |
-| **sidebar.hidden**   | Removes the sidebar outright                                                                            |
+| key | usage |
+| --- | --- |
+| **plugins** | Array of plugins to be added to the CMS object. |
+| **apis** | Object containing APIs to be registered to the CMS |
+| **sidebar** | Configures behavior of the sidebar |
+| **sidebar.hidden** | Removes the sidebar outright |
 | **sidebar.position** | 'displace': sidebar pushes content to the side when open; 'overlay': sidebar overlaps content when open |
-| **sidebar.buttons**  | Configures the text on 'Save' and 'Reset' buttons                                                       |
-| **toolbar**          | Configures behavior of the toolbar                                                                      |
-| **toolbar.hidden**   | Hides the toolbar altogether — is hidden by default                                                     |
-| **toolbar.buttons**  | Configures the text on 'Save' and 'Reset' buttons                                                       |
+| **sidebar.buttons** | Configures the text on 'Save' and 'Reset' buttons |
+| **toolbar** | Configures behavior of the toolbar |
+| **toolbar.hidden** | Hides the toolbar altogether — is hidden by default |
+| **toolbar.buttons** | Configures the text on 'Save' and 'Reset' buttons |
 
----
+***
 
 ```javascript
 import { TinaCMS } from 'tinacms'
